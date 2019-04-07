@@ -10,18 +10,18 @@ package juego.de.naves.oficial;
  **  Importaciones generales del sistema
  ******************************************************************** 
  ********************************************************************/
-import java.awt. Canvas;
-import java.awt. Color; 
-import java.awt. Dimension;
-import java.awt. Graphics2D;
-import java.awt.event. KeyAdapter;
-import java.awt.event. KeyEvent;
-import java.awt.event. WindowAdapter;
-import java.awt.event. WindowEvent;
-import java.awt.image. BufferStrategy;
-import java.util. ArrayList; 
-import javax.swing. JFrame;
-import javax.swing. JPanel ; 
+import java.awt.Canvas;
+import java.awt.Color; 
+import java.awt.Dimension;
+import java.awt.Graphics2D;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.awt.image.BufferStrategy;
+import java.util.ArrayList; 
+import javax.swing.JFrame;
+import javax.swing.JPanel; 
 
 /*****************************************************************
 /*****************************************************************
