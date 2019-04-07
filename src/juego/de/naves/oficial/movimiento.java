@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package juego.de.naves.oficial;
 
 import java.awt. Graphics ;
@@ -6,12 +11,8 @@ import java.awt. Rectangle ; // para las colisiones
 
  /********************************************************************
  /*
- /* Esta clase representa algunos elementos que aparecen en el juego,
- * la entidad tiene la responsabilidad de resolver las colisiones y
- * movimientos basados en un conjunto de características definidas
- * en cualquiera de las subclases. Utilizo double para la
- * localización de los pixels para dar más precisión.
- * @autor Antonio Rivero
+ /* Esta clase representa algunos elementos que aparecen en el juego, la entidad tiene la responsabilidad de resolver las colisiones y
+ * movimientos basados en un conjunto de características definidas en cualquiera de las subclases. Utilizo double para la localización de los pixels para dar más precisión.
  /*
  /********************************************************************
  /********************************************************************/
@@ -36,8 +37,7 @@ import java.awt. Rectangle ; // para las colisiones
     public invader juego;
 
  //******************************************************************
- /** Descrip: Constructora de la clase, referenciada sobre un sprite y
- * la localización de este.
+ /** Descripción: Constructora de la clase, referenciada sobre un sprite y la localización de este.
  * @Params: ref Referencia del sprite para mostrar por pantalla
  * @Params: x Localización inicial de la entidad, variable x
  * @Params: y Localización inicial de la entidad, variable y
@@ -52,11 +52,9 @@ import java.awt. Rectangle ; // para las colisiones
     }
 
  //******************************************************************
- /** Descrip: Solicita a la entidad el movimiento respecto al tiempo
- * trancurrido
+ /** Descripción: Solicita a la entidad el movimiento respecto al tiempo trancurrido
  * @Params: delta. Tiempo transcurrido en ms
  * @Return: nada.
- *
  *******************************************************************/
     public void gestionMovimiento (long delta ) {
  // carga el movimiento de las entidades
@@ -64,37 +62,34 @@ import java.awt. Rectangle ; // para las colisiones
         y += (delta * dy) / 1000 ;
     }
 //******************************************************************
- /** Descrip: Crea la posición horizontal del sprite
+ /** Descripción: Crea la posición horizontal del sprite
  * @Params: dy. Velocidad horizontal de la entidad (pixels/sec)
  * @Return: nada.
- *
  *******************************************************************/
     public void setHorizontal (double dx) {
         this .dx = dx;
     }
 
  //******************************************************************
- /** Descrip: Crea la posición vertical del sprite
+ /** Descripción: Crea la posición vertical del sprite
  * @Params: dy. Velocidad vertical de la entidad (pixels/sec)
  * @Return: nada.
- *
  *******************************************************************/
     public void setVertical (double dy) {
         this .dy = dy;
     }
 
  //******************************************************************
- /** Descrip: Devuelve la posición del sprite
+ /** Descripción: Devuelve la posición del sprite
  * @Params: nada.
  * @Return: Velocidad horizontal de la entidad (pixels/sec)
- *
  *******************************************************************/
     public double getVeloHorizontal () {
         return dx;
     }
 
  //******************************************************************
- /** Descrip: Devuelve la posición del sprite
+ /** Descripción: Devuelve la posición del sprite
  * @Params: nada.
  * @Return: Velocidad vertical de la entidad (pixels/sec)
  *
@@ -104,7 +99,7 @@ import java.awt. Rectangle ; // para las colisiones
     }
 
  //******************************************************************
- /** Descrip: Dibuja los gráficos de esta entidad
+ /** Descripción: Dibuja los gráficos de esta entidad
  * @Params: g. Graficos del dibujo
  * @Return: nada.
  *
@@ -114,7 +109,7 @@ import java.awt. Rectangle ; // para las colisiones
     }
 
  //******************************************************************
- /** Descrip: Trabaja con la lógica asociada a esta entidad
+ /** Descripción: Trabaja con la lógica asociada a esta entidad
  * Este método se llama frecuentemente
  * @Params: nada.
  * @Return: nada.
@@ -124,7 +119,7 @@ import java.awt. Rectangle ; // para las colisiones
     }
 
  //******************************************************************
- /** Descrip: Localiza la posición de x
+ /** Descripción: Localiza la posición de x
  * @Params: nada.
  * @Return: La situación de la variable x de la entidad
  *
@@ -134,7 +129,7 @@ import java.awt. Rectangle ; // para las colisiones
         return (int) x;
     }
  //******************************************************************
- /** Descrip: Localiza la posición de y
+ /** Descripción: Localiza la posición de y
  * @Params: nada.
  * @Return: La situación de la variable y de la entidad
  *
@@ -144,7 +139,7 @@ import java.awt. Rectangle ; // para las colisiones
     }
 
  //******************************************************************
- /** Descrip: Verifica si la entidad ha colisionado con otra
+ /** Descripción: Verifica si la entidad ha colisionado con otra
  * @Params: other. Entidad que verifica la colision
  * @Return: Verdadero si las entidades colisionan unas con otras
  *
@@ -156,7 +151,7 @@ import java.awt. Rectangle ; // para las colisiones
     }
 
  //******************************************************************
- /** Descrip: Aviso a la entidad que ha colisionado con otra
+ /** Descripción: Aviso a la entidad que ha colisionado con otra
  * @Params: other. entidad con la que colisionamos
  * @Return: Nada
  *
@@ -179,12 +174,9 @@ import java.awt. Rectangle ; // para las colisiones
     }
 
  //*******************************************************************
- /** Descrip: El método run() es el corazón de cualquier "Thread"
- * y contiene las tareas de ejecución, la acción
- * sucede dentro del método run().
+ /** Descripción: El método run() es el corazón de cualquier "Thread" y contiene las tareas de ejecución, la acción sucede dentro del método run().
  * @Params: Nada
  * @Return: Nada
- *
  ********************************************************************/
     public void run() {
         long lastLoopTime = System .currentTimeMillis ();
@@ -202,7 +194,4 @@ import java.awt. Rectangle ; // para las colisiones
             }
         }
     }
-    
-    
-    
  }
