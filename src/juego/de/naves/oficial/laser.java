@@ -5,17 +5,13 @@
  */
 package juego.de.naves.oficial;
 
-/**
- *
- * @author AnaHernández
- */
+
 public class laser extends disparo {
 /************************************************************
 /************************************************************
  *
  * Esta clase representa un laser de la nave defensora
- *Descrip: Constructor de clase.
- * Crea un nuevo laser de la nave defensora
+ * Descripción: Constructor de clase. Crea un nuevo laser de la nave defensora
  *
  * @Params: juego Representa el laser que creamos
  * @Params: ref Referencia del sprite para mostrar la nave
