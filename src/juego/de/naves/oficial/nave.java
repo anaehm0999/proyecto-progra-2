@@ -1,10 +1,14 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package juego.de.naves.oficial;
 
 public abstract class nave extends movimiento {
 
  //*******************************************************************
- /** Descrip: Constructor de clase.
- * Crear una nueva entidad para representar las naves
+ /** Descripción: Constructor de clase. Crear una nueva entidad para representar las naves
  *
  * @Params: juego Representa la nave que creamos
  * @Params: ref Referencia del sprite para mostrar la nave
