@@ -1,8 +1,13 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package juego.de.naves.oficial;
 //Esta clase representa los alien. 
 
 public class Aliens extends nave{
-   /** Descrip: Constructor de clase. Crea un nuevo alien
+   /** Descripción: Constructor de clase. Crea un nuevo alien
    * @Params: juego Representa el alien que creamos 
    * @Params: ref Referencia del sprite para mostrar del alien 
    * @Params: x Localización inicial del alien, variable x 
@@ -12,8 +17,9 @@ public class Aliens extends nave{
             dx = -75;  
     }
     //*******************************************************************
-    /** Descrip: Actualización de los alien 
-    *  @Params: Nada 30 *  @Return: Nada 
+    /** Descripción: Actualización de los alien 
+    *  @Params: Nada 30 
+    *  @Return: Nada 
     //********************************************************************/
     public void descender () {
         // si detectamos que un alien llega al borde
@@ -27,8 +33,7 @@ public class Aliens extends nave{
         } 
     }    
        
-    /** Descrip: Controla el movimiento de los aliens, evita que el alien 
-    * se desplace fuera de los lados de la pantalla
+    /** Descripción: Controla el movimiento de los aliens, evita que el alien se desplace fuera de los lados de la pantalla
     *  @Params: delta. Tiempo transcurrido desde el último movimiento (ms)
     *  @Return: Nada*/   
     public void gestionMovimiento (long delta ) {
