@@ -7,15 +7,10 @@ package juego.de.naves.oficial;
 
 /**
  *
- * @author AnaHernández
- */
-/**********************************************************************
- ***********************************************************************
- **
- ** Importaciones generales del sistema
- **
- ***********************************************************************
- ***********************************************************************/
+ * Importaciones generales del sistema
+ *
+ **/
+
  import java.awt. GraphicsConfiguration ;
  import java.awt. GraphicsEnvironment ;
  import java.awt. Image ;
@@ -27,18 +22,15 @@ package juego.de.naves.oficial;
  import javax.imageio. ImageIO ; // carga la imagen
 
  //*********************************************************************
- /** Descrip: Clase SpriteAux. Se encarga de los recursos para los
- * Sprites en el juego. Es importante el cómo y dónde
- * utilizamos los recursos
- * Responsable carga y cache de los sprites
- *
- **********************************************************************/
+ /** Descripción: Clase SpriteAux. Se encarga de los recursos para los Sprites en el juego. Es importante el cómo y dónde utilizamos los recursos. Responsable carga y cache de los sprites
+ ***********************************************************************/
+
 public class SpriteAux {
  /** Instancia simple de esta clase */
     private static SpriteAux single = new SpriteAux ();
 
  //*********************************************************************
- /** Descrip: Crea una instancia simple de la clase
+ /* Descripción: Crea una instancia simple de la clase
  *
  * @Params: nada
  * @Return: Una instancia simple de la clase
@@ -51,7 +43,7 @@ public class SpriteAux {
     private HashMap sprites = new HashMap ();
 
  //*********************************************************************
- /** Descrip: Recupera un sprite
+ /** Descripción: Recupera un sprite
  *
  * @Params: ref. Referencia a la imagen usada por el sprite
  * @Return: Una instancia que contiene la peticion de la
@@ -90,7 +82,7 @@ public class SpriteAux {
     }
 
  //*********************************************************************
- /** Descrip: Tratamiento de recursos
+ /** Descripción: Tratamiento de recursos
  *
  * @Params: message. mensaje lanzado a la ventana
  * @Return: nada
