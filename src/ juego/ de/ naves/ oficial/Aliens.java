@@ -39,9 +39,10 @@ public class Aliens extends nave{
     public void gestionMovimiento (long delta ) {
         if ((dx < 0) && (x < 10)) { // si alcanza el lado izquierdo
                juego. cargaLogica (); // actualizamos la logica del juego
-        } if ((dx > 0) && (x > 750)) { // y viceversa para el derecho 
+        } 
+        if ((dx > 0) && (x > 750)) { // y viceversa para el derecho 
                juego. cargaLogica (); 
-            }
+        }
            super.gestionMovimiento (delta);
     }    
 }
